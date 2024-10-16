@@ -12,11 +12,6 @@ body {
     padding: 20px;
 }
 
-h1 {
-    text-align: center;
-    color: #6894c0;
-}
-
 .main-contect {
     max-width: 800px;
     margin: 0 auto;
@@ -25,27 +20,15 @@ h1 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.section {
-    margin-bottom: 20px;
-}
-
-h2 {
+.question {
     color: #2980b9;
     border-bottom: 2px solid #2980b9;
     padding-bottom: 5px;
 }
 
-p {
+.def {
     line-height: 1.6;
     margin-bottom: 20px;
-}
-
-code {
-    background-color: #f4f4f9;
-    padding: 2px 4px;
-    border-radius: 4px;
-    font-family: "Courier New", Courier, monospace;
-    font-size: 1rem;
 }
 
 .code-block {
@@ -56,12 +39,3 @@ code {
     margin-bottom: 20px;
     font-family: "Courier New", Courier, monospace;
 }
-
-ul {
-    padding-left: 20px;
-}
-
-ul li {
-    margin-bottom: 10px;
-}
-
