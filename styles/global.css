@@ -114,4 +114,11 @@ footer {
 
 }
 
+@media screen and (max-width: 786px) {    
+    .main-menu {
+        flex-direction: column;
+    }
+   
+}
+
 
