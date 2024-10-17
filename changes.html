@@ -1,76 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>changes</title>
-    <link rel="stylesheet" href="./styles/global.css">
-    <link rel="stylesheet" href="./styles/changes.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>changes</title>
+  <link rel="stylesheet" href="./styles/global.css">
+  <link rel="stylesheet" href="./styles/changes.css">
 </head>
 <body>
   <!--Navbar-->
   <div class="navbar">
     <header class="container flex">
-            <item class="logotype"> 
-                <a href="index.html"><img src="./images/git_guide_logotype.png" alt="logotype"></a>
-            </item>
-            <ul>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Changes</a></li>
-                <li><a href="#">Branching</a></li>
-                <li><a href="#">About us</a></li>
-            </ul>
+      <item class="logotype">
+        <a href="index.html"><img src="./images/git_guide_logotype.png" alt="logotype"></a>
+      </item>
+      <ul>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Changes</a></li>
+        <li><a href="#">Branching</a></li>
+        <li><a href="#">About us</a></li>
+      </ul>
     </header>
-</div>
-   <h3>Explain the process involved in adding code to an existing repository</h3>
-   <h3>To add changes to an existing Git repository, follow these steps: </h3>
+  </div>
+  <div class="text-container">
+    <h3>Explain the process involved in adding code to an existing repository</h3>
+    <h3>To add changes to an existing Git repository, follow these steps: </h3>
 
-   <h3>Use the git add command to stage the files or directories you want to include 
-       in the next commit. For example:</h3>
-      <p>PS D:\Gitguide-assignment>change-branch</p>
+    <p>Use the git add command to stage the files or directories you want to include
+      in the next commit. For example:</p>
+    <p>PS D:\Gitguide-assignment>change-branch</p>
 
-   <h3>After changes in your file.</h3>
-      <li>Add changes </li>
-        Bash
-        git add .
-      <span>Use code with caution.</span>
+    <p>After changes in your file.</p>
+    <li>Add changes </li>
+    <mark>
+      git add .
+    </mark>
+    <br />
+    <strong>Use code with caution.</strong>
 
-      <li> Commit changes:</li>
-        <p>Use the git commit command to create a new commit with a descriptive message. For example:</p>
-      <ol>
-        Bash
+    <li> Commit changes:</li>
+    <p>Use the git commit command to create a new commit with a descriptive message. For example:</p>
+    <ul>
+      <mark>
         git commit -m "Add new feature"
-          
-      <span>Use code with caution.</span>
-
-      <li> Push changes </li>
-      <p> If you're working with a remote repository named "changes-branch" and want to push your changes to the "main" </p>
-        Bash
-      <li>git push </li>
+      </mark>
+      <br />
+      <strong>Use code with caution.</strong>
+    </ul>
+    <li> Push changes </li>
+    <p> If you're working with a remote repository named "changes-branch" and want to push your changes to the "main"
+    </p>
+     <li> <mark>git push</mark> </li>
 
     <h3>when you are pushing first time your branch you have to copy prompt stream. </h3>
-      <li>git push --set-upstream origin new_branch</li>
-      </ol>
-      <span>Use code with caution.</span>
-
-
+    <li> <mark>git push --set-upstream origin new_branch </mark></li>
+    </ul>
+    <strong>Use code with caution.</strong>
+    <br />
     <h3>Detail the git commands involved in adding changes to an existing repository</h3>
-    <h3>Steps involved</h3>
-      <ol>
-         <li> git add .</li>
-         <li>git commit -m "few feature"</li>
-         <li>git push </li>
-       <span> when you are pushing first time your branch you have to copy prompt stream</span>
-        copy from prompt stream and paste the cammand.
-        For Example: git push --set-upstream origin changes-branch.
-      </ol>
-      <footer>
-        <div class="footer-content">
-            <img src="images/git_guide_logotype.png" alt="logotype">
-        </div>
-        <div class="footer-bottom">
-            <p>Copyright © Team Innovators 2024</p>
-        </div>
-    </footer>
+    <h3>Steps involved:</h3>
+    <ol>
+      <li><mark> git add .</mark></li>
+      <li><mark>git commit -m "few feature" </mark></li>
+      <li><mark>git push </mark></li>
+      <strong> when you are pushing first time your branch you have to copy prompt stream
+        copy from prompt stream and paste the cammand.</strong>
+      <br />
+      <mark>For Example: git push --set-upstream origin changes-branch.</mark>
+    </ol>
+  </div>
+  <footer>
+    <div class="footer-content">
+      <img src="images/git_guide_logotype.png" alt="logotype">
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright © Team Innovators 2024</p>
+    </div>
+  </footer>
 </body>
 </html>
