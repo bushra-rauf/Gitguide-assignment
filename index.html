@@ -1,35 +1,44 @@
-<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Git Guide</title>
-    <link rel="stylesheet" href="./styles/global.css">
-</head>
-
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/index.css">
 <body>
-    <header class="header">
-        <nav class="main-menu">
-            <item> <a href="index.html"><img src="./images/git_guide_logo.png" alt="logotype"></a></item>
-            <ul>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Branching</a></li>
-                <li><a href="#">Changes</a></li>
-                <li><a href="#">Projects</a></li>
-            </ul>
-        </nav>
-    </header>
+<!--Navbar-->
+    <div class="navbar">
+        <header class="container flex">
+                <item class="logotype"> 
+                    <a href="index.html"><img src="./images/git_guide_logotype.png" alt="logotype"></a>
+                </item>
+                <ul>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="#">Changes</a></li>
+                    <li><a href="#">Branching</a></li>
+                    <li><a href="#">About us</a></li>
+                </ul>
+        </header>
+    </div>
 
     <main class="main">
-        <div class="main-content"> <span>Welcome</span> to our Lap Innovators
-        <h2>The Git Gide</h2>
+        <div class="container grid-1">
+            <item class="img">
+                <img class="image-mq" src="images/Main_image_homepage.png" alt="github-logotype">
+            </item>
+            <item class="main-text">
+                <h1>Welcome to The Git Guide!</h1>
+            </item>
         </div>
-        <img src="./images/images.png" alt="gituplogo" width="100%" height="100%">
     </main>
-    <footer class="footer">
-        <h1>copyright© saba 2024</h1>
+
+    <footer>
+        <div class="footer-content logotype">
+            <a href="index.html"><img src="images/git_guide_logotype.png" alt="logotype"></a>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © Team Innovators 2024</p>
+        </div>
     </footer>
 </body>
- 
 </html>
