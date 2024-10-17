@@ -5,166 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>project</title>
     <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/project.css">
 </head>
 <body>
-    <header class="header">
-        <nav class="main-menu">
-            <item> <a href="index.html"><img src="./images/git_guide_logo.png" alt="logotype"></a></item>
-            <ul>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Changes</a></li>
-                <li><a href="#">Branching</a></li>
-                <li><a href="#">About us</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <sidebar class="sidebar">
-        <a href=",/">Repositories</a>
-        <a href=",/">Creating project</a>
-        <a href="./">Relivent Git cammand</a>
-        <a href="./">link local and remote repo</a>
-        <a gref=",/">People contribution</a>
-    </sidebar>
-    <main class="main">
-        <h3> 
-            Explain why remote repositories are necessary
-        </h3>
-            <p> <span>Repositories </span>is a place, room or container where something is deposited or stored.
-            </p>
-            <h3>Here is a simplified breakdown of why GitHub repositories are important:
-            </h3>
-            <ul>
-                <span>Central Hub: </span> They hold all project files, documentation, and version history.
-
-                <span>Collaboration: </span> Multiple people can work on the project at the same time.
-
-                <span>Track Changes: </span> You can see who made what changes and when.
-
-                <span>Pull Requests: </span> Propose updates and get them reviewed before merging.
-
-                <span>Branches : </span> I Work on different features or versions without messing up the main code.
-            </ul>
-
-            <h3>Detail the steps involved in creating a project on github</h3>
-
-               <h3>The Steps involved in creating a project on GitHub: </h3>
-
+    <!--Navbar-->
+    <div class="navbar">
+        <header class="container flex">
+                <item class="logotype"> 
+                    <a href="index.html"><img src="./images/git_guide_logotype.png" alt="logotype"></a>
+                </item>
                 <ul>
-                    Sign Up/In: Create an account or sign in if you already have one.
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="#">Changes</a></li>
+                    <li><a href="#">Branching</a></li>
+                    <li><a href="#">About us</a></li>
+                </ul>
+        </header>
+    </div>
 
-                    Create a New Repository:
+    <main class="main main2">
+        <div class="container grid-2">
+            <div>
+                <h2>Why are remote repositories necessary?</h2>
+                <p>The remote repository is cloud based and helps you to store your local files remotely. This helps you access files that aren't already in your computer locally. Other collaborators can also access files by cloning the repositories.</p>
+            </div>
+            <div></div>
+            <div>
+                <h2>How to create a project locally:</h2>
+                <ul class="ul-dots">
+                    <li>Create a project and turn it into a git project by typing: git init</li>
+                    <li>This will create a hidden directory called .git that enables communication with GitHub.</li>
+                    <li>Once the local project is created, go and create repo for it in Github.</li>
+                </ul>
+            </div>
+            <div></div>
+            <div>
+                <h2>How to create a GitHub repository:</h2>
+                <ul class="ul-dots">
+                    <li>Sign in/up to create an account</li>
+                    <li>Create a new repository by clicking the upper right + button</li>
+                    <li>Name your repo, add a description and make it public</li>
+                    <li>Once the GitHub repo is created, you need to connect you local code to the repo.</li>
+                </ul>
+            </div>
+            <div></div>
+            <div>
+                <h2>How to link local and remote repositories:</h2>
+                <ul class="ul-dots">
+                    <li>Type in:  git remote add origin git@github.com:your-account/repo/.git (Connects your local code to the GitHub repo)</li>
+                    <li>Then type: git branch -M main (Renames the current branch to 'main')</li>
+                    <li>git push -u origin main (This pushes the local code to the remote repo)</li>
+                </ul>
+            </div>
+            <div></div>
+            <div>
+                <h2>How other people can contribute to the project:</h2>
+                <ul class="ul-dots">
+                    <li>They contribute by cloning the project into their local machine.</li>
+                    <li>Each project has an endpoint URL that holds the files and directories of the project.</li>
+                    <li>In the home page of the repo, look for the green button and copy the SSH code in the tab.</li>
+                    <li>Type in: git clone (project-URL) to make a local copy of the project.</li>
+                    <li>Now the collaborators can start to add code into the project.</li>
+                </ul>
+            </div>
+        </div>
+    </main>
 
-                    Click on the + sign in the upper-right corner and select New repository.
-
-                    Name your repository, add a description, and decide if it should be public or private.
-
-                    Initialize the repository with a README if you like.
-
-                    Clone the Repository:
-
-                    If you are working locally, clone the repo using git clone <repository-url>.
-
-                    Add Files: Add your project files to the repository folder.
-
-                    Commit Changes:
-
-                    Stage your changes with git add ..
-
-                    Commit them with git commit -m "Initial commit".
-
-                    Push Changes:
-
-                    Push the changes to GitHub using git push origin main (or whatever your branch name is).
-
-                    Collaborate: Share the repository link with others to collaborate.
-
-                    Use branches and pull requests to manage changes and reviews.
-
-                    And there you have it! Your project is live on GitHub and ready for the world. 
-
-
-                <h3>Details the relevant git commands relevant to creating a project locally</h3> 
-
-                <h4> Here's a cheat sheet for setting up a project locally using Git: </h4> 
-
-                <h4> Initialize a Repository: </h4>
-                <ol>  
-                    bash: git init
-                    Sets up a new Git repository.
-                    
-                    Add Files: 
-                    bash: git add .
-
-                    Commit Changes:
-                    bash: git commit -m "Initial commit"
-                    Commits your staged files with a message.
-
-                    Create a Remote Repository on GitHub (via GitHub website):
-
-                    Create a new repository and get the repository URL.
-
-                    Link Local Repository to GitHub:
-                    bash: git remote add origin <repository-url>
-
-                    Connects your local repository to the GitHub repository.
-
-                    bush Changes to GitHub:
-                    bash :git push -u origin master
-
-                    Pushes your committed changes to the master branch on GitHub. Replace master with main if necessary.
-                    
-                    
-                    Check Repository Status:
-                    bash: git status
-                    Shows the current state of your working directory and staging area.
-
-                    See Commit History:
-                    bash: git log
-                    Displays the commit history for the repository.
-                </ol>    
-                
-                <h3>Details the git commands to link the local and remote repos</h3>
-                <h4>Add Remote Repository:</h4>
-                <h4>Note: When you make new repository on the same at the bottom you can copy paste one by one and enter on bash  </h4> 
-                 <ol>  
-                    git remote add origin https://github.com/bushra-rauf/ada.git
-                    git branch -m main
-                    git push -u origin main
-                </ol>
-
-                <h3>Detail how other people can contribute to the project </h3>
-
-                    The contribution begin with the Html code writing and styling the website.
-
-                    To contribute to a project in GitHub, other people can follow these steps:
-
-                    1, The Repository: They can create their own copy of the project by forking the repository. This allows them to make changes without affecting the original project. </h3>
-                    
-                    2. Clone the Repository: After forking, they can clone their forked repository to their local machine using Git. This allows them to work on the project offline.
-                    
-                    3. Create a Branch: It's a good practice to create a new branch for their changes. This keeps the main branch clean and allows for easier collaboration.
-                    
-                    4. Make Changes: They can then make their desired changes or additions to the project in their branch.
-                    
-                    5. Commit Changes: Once they are satisfied with their changes, they should commit them with a clear and descriptive message explaining what they did.
-                    
-                    6. Push Changes: After committing, they can push their changes back to their forked repository on GitHub.
-                    
-                    7. Open a Pull Request: Finally, they can open a pull request from their branch in the forked repository to the original repository. This is where they can discuss their changes with the project maintainers and get feedback.
-                    
-                    8. Engage in Discussion: They should be open to feedback and ready to make further changes if necessary. Collaboration is key!
-                    
-                    By following these steps, anyone can contribute to a project on GitHub and help improve it! If you have any more questions or need further assistance, feel free to ask!
-
-
-                </ol>
-
-    </main>    
-    </body>
-    <footer class="footer">
-        <h1>copyright© Innovators 2024</h1>
+    <footer>
+        <div class="footer-content logotype">
+            <a href="index.html"><img src="images/git_guide_logotype.png" alt="logotype"></a>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © Team Innovators 2024</p>
+        </div>
     </footer>
-     
 
+</body>
 </html>
