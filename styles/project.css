@@ -13,10 +13,15 @@ body {
     list-style-type: disc;
 }
 
+.head-title {
+    margin-left: 312px;
+    margin-bottom: 10px;
+}
+
 .grid-2 {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     column-gap: 10px;
     row-gap: 10px;
     justify-content: center;
@@ -45,5 +50,10 @@ body {
         margin-top: 10px;
         margin-bottom: 10px;
         font-size: 21px;
+    }
+
+    .head-title {
+        margin: 0;
+        text-align: left;
     }
 }
