@@ -2,10 +2,16 @@
     font-family: 'Times New Roman', Times, serif;
     font-weight: 900;
     font-style: normal;
+    margin: 20px;
+}
+
+.header-team {
+    text-align: center;
 }
 
 .teamwork {
     font-size: 1.4rem;
+   
 }
 
 .main_container {
@@ -20,6 +26,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin: 40px;
 
 }
 
