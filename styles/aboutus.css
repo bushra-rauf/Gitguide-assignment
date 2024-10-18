@@ -1,4 +1,10 @@
- .introduction .header-team {
+h1 {
+    text-align: center;
+     margin: 10px; 
+} 
+
+
+.introduction .header-team {
     font-family: 'Times New Roman', Times, serif;
     font-weight: 900;
     font-style: normal;
@@ -7,6 +13,8 @@
 
 .header-team {
     text-align: center;
+    padding: 20px;
+    
 }
 
 .teamwork {
