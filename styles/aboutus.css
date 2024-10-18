@@ -1,11 +1,15 @@
- .introduction .header-team {
+.introduction .header-team {
     font-family: 'Times New Roman', Times, serif;
     font-weight: 900;
     font-style: normal;
+    margin: 20px ;
 }
 
 .teamwork {
     font-size: 1.4rem;
+    padding: 24px;
+    text-align: center;
+   
 }
 
 .main_container {
@@ -20,7 +24,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-
+    margin: 40px;
 }
 
 .main_container .card {
@@ -59,7 +63,6 @@
     visibility: hidden;
     opacity: 0;
     transition: 0.3s ease-in-out;
-
 }
 
 .main_container .card:hover .content {
@@ -69,5 +72,9 @@
     transition-delay: 0.3s ;
 }
 
-
-
+@media screen and (max-width: 786){
+    .main_container {
+        flex-direction: column;
+        width: 390;
+    }
+}
