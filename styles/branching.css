@@ -1,17 +1,23 @@
 
+h1 {
+   text-align: center;
+   font-size: 2.5rem;
+   
+}
 
 body {
-    background-color: #d4cdd4;
+    background-color: #f8f7f8;
     margin: 0;
-    padding: 20px;
+  
 }
 
 .main-contect {
     max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 60px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem;
 }
 
 .question {
@@ -26,10 +32,11 @@ body {
 }
 
 .code-block {
-    background-color: #f9f9f9;
+    background-color: #474444;
     padding: 10px;
     border: 1px solid #e1e1e1;
     border-radius: 4px;
     margin-bottom: 20px;
     font-family: "Courier New", Courier, monospace;
+    color: #fff;
 }

@@ -9,14 +9,21 @@
     <link rel="stylesheet" href="./styles/branching.css">
 </head>
 <body>
-    <header class="header">
-        <h1 class="header__pagr-title">Branching</h1>
-    </header>
-    <nav class="main-menu">
-        <a href="./changes.html">Changing</a>
-        <a href="./branching.html">Branching</a>
-        <a href="./aboutus.html">About us</a>
-    </nav>
+    <!--Navbar-->
+    <div class="navbar">
+        <header class="container flex">
+                <item class="logotype"> 
+                    <a href="index.html"><img src="./images/git_guide_logotype.png" alt="logotype"></a>
+                </item>
+                <ul>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="changes.html">Changes</a></li>
+                    <li><a href="branching.html">Branching</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                </ul>
+                <h1>Branching</h1>
+        </header>
+    </div>
     <main class="main-contect">
         <section>
             <h2 class="question">Why Branching is Important</h2>
@@ -34,11 +41,11 @@
             <div class="code-block">
                 <p>git checkout main</p>
             </div>
-            <h3 class="answer">3.Creating a Branch</h3>
+            <h3 class="answer">2.Creating a Branch</h3>
             <div class="code-block">
                 <p>git checkout -b /branch-name</p>
             </div>
-          h3 class="answer">Switching to a Branch</h3>
+            <h3 class="answer">3.Switching to a Branch</h3>
             <div class="code-block">
                 <p>git checkout branch-name</p>
             </div>
