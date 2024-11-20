@@ -22,26 +22,72 @@
         <section>
             <h2 class="question">Why Branching is Important</h2>
             <h3 class="ans">Some key reasons why branching is important:</h3>
+            
             <h4 class="heading">Isolated Development:</h4>
             <p>Allows developers to work on different tasks without interfering with others.</p>
+            
             <h4 class="heading">Reduced Risk:</h4>
             <p>Changes can be tested and reviewed without affecting the main project.</p>
+            
             <h4 class="heading">Organized Workflow:</h4>
             <p>Teams can organize features, fixes, and releases more efficiently.</p>
+            
             <h4 class="heading">Versioning:</h4>
             <p>Preserves history, making it easy to trace or revert changes.</p>
+        </section>
+        <section>
             <h2 class="question">Git Commands for Branching</h2>
-            <p>Branches are made from main</p>
+            <p>Branches are made from main:</p>
+            
             <div class="code-block">
-                <p>git checkout main</p>
+                <code>git checkout main</code>
             </div> 
+            
             <h3 class="answer">Creating a Branch</h3>
             <div class="code-block">
-                <p>git checkout -b branch-name</p>
+                <code>git checkout -b branch-name</code>
             </div>
+            
             <h3 class="answer">Switching to a Branch</h3>
             <div class="code-block">
-                <p>git checkout branch-name</p>
+                <code>git checkout branch-name</code>
+            </div>
+        </section>
+        <section>
+            <h2 class="question">Merging Branches</h2>
+            <h3 class="answer">Why Merging is Important</h3>
+            <p>Merging combines changes from different branches, allowing completed features or fixes to be integrated into the main branch or other branches. This process ensures that all team members’ contributions are combined into one cohesive project.</p>
+            
+            <h3 class="answer">Steps for Merging a Branch</h3>
+            <p>To merge a branch into the main branch, first switch to the main branch:</p>
+            
+            <div class="code-block">
+                <code>git checkout main</code>
+            </div>
+            
+            <p>Then, use the following command to merge your feature branch into the main branch:</p>
+            
+            <div class="code-block">
+                <code>git merge branch-name</code>
+            </div>
+            
+            <h3 class="answer">If Resolving Merge Conflicts</h3>
+            <p>If there are conflicts (changes that cannot be automatically merged), Git will indicate the files that need attention. Open these files, review both changes, and edit them to resolve conflicts.</p>
+            
+            <p>After resolving conflicts, mark the changes as resolved with:</p>
+            
+            <div class="code-block">
+                <code>git add .</code>
+            </div>
+            
+            <p>Finally, complete the merge with:</p>
+            
+            <div class="code-block">
+                <code>git commit -m""</code>
+            </div>
+    
+            <div class="code-block">
+                <code>git merge branch-name</code>
             </div>
         </section>
     </main>
