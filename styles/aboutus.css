@@ -1,0 +1,88 @@
+h1 {
+    text-align: center;
+     margin: 10px; 
+} 
+
+
+.introduction .header-team {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    font-style: normal;
+    margin: 20px;
+}
+
+.header-team {
+    text-align: center;
+    padding: 20px;
+    
+}
+
+.teamwork {
+    font-size: 1.4rem;
+   
+}
+
+.main_container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-wrap: wrap;
+    padding: 10px; 
+} 
+
+.card__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 40px;
+
+}
+
+.main_container .card {
+    max-width: 300px;
+    height: 200px;
+    background-color: #fff;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 100px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.main_container .card:hover {
+    height: 300px;
+}
+
+.main_container .card .imgbox {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -50px;
+    left: 20px;
+    z-index: 10;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+
+}
+
+.main_container .card .content {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+
+}
+
+.main_container .card:hover .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top:-40px;
+    transition-delay: 0.3s ;
+}
+
+
+

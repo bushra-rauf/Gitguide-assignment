@@ -1,14 +1,10 @@
+/*Testkommentar*/
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: black;
-    line-height: 1.6;
-}
 
 ul {
     list-style-type: none;
@@ -56,28 +52,11 @@ a {
     transition: ease-in;
 }
 
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
-    overflow: auto;
-    padding: 0 40px;
-    height: 700px;
-}
-
-.flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    overflow: visible;
-}
-
 /* Footer & Social media */
 
 footer {
     background-color: white;
     height: auto;
-    width: 100vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 40px;
     color: white;
@@ -93,7 +72,6 @@ footer {
 
 .footer-bottom {
     background: white;
-    width: 100vw;
     padding-top: 0;
     padding-bottom: 20px;
     text-align: center;
@@ -105,51 +83,42 @@ footer {
     word-spacing: 2px;
     text-transform: capitalize;
     margin-top: 10px;
-    margin-right: 70px;
-}
-/* Grid Structure*/
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    column-gap: 10px;
-    row-gap: 10px;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
 }
 
-.grid-2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    column-gap: 10px;
-    row-gap: 10px;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
+/*Responsive navbar*/
 
-/*
-@media screen and (min-width: 678px) ,(height:900px)
+@media(max-width: 630px)  {
+    .navbar {
+        height: 210px;
+    }
 
-{
+    .navbar img {
+        height: 75px;
+        margin-top: 30px;
+    }
 
-body {
-    font-size: 18px;
-}    
-.main-content {
-    flex-direction: column;
-    height:auto;
- }
+    .navbar .flex {
+        flex-direction: column;
+    }
 
-.img {
-    width: 20%;
-    height: 40vh;
+    .navbar ul {
+        padding: 10px;
+        border: 1px solid #333;
+        font-size: 8px;
+        margin-bottom: 40px;
+    }
+
+    .navbar nav {
+        margin-bottom: 50px;
+    }
 
 }
 
+@media screen and (max-width: 786px) {    
+    .main-menu {
+        flex-direction: column;
+    }
+   
 }
-*/
 
 
