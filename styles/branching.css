@@ -1,4 +1,11 @@
 
+
+
+body {
+    background-color: #f5e4f5;
+    margin: 0;
+    padding: 20px;
+=======
 h1 {
    text-align: center;
    font-size: 2.5rem;
@@ -14,6 +21,11 @@ body {
 .main-contect {
     max-width: 800px;
     margin: 0 auto;
+
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+=======
     padding: 60px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -32,11 +44,18 @@ body {
 }
 
 .code-block {
+
+    background-color: #f9f9f9;
+
     background-color: #474444;
+
     padding: 10px;
     border: 1px solid #e1e1e1;
     border-radius: 4px;
     margin-bottom: 20px;
     font-family: "Courier New", Courier, monospace;
+
+}
+
     color: #fff;
 }
